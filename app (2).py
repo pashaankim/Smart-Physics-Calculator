@@ -1007,7 +1007,6 @@ elif menu == "📝 Latihan":
         st.markdown(f"<span class='tag {diff_color}'>{q['difficulty']}</span>", unsafe_allow_html=True)
 
     st.subheader(q['question'])
-
     answer = st.radio("Pilih jawaban:", q['options'], index=None, key=f"quiz_opt_{q['id']}")
 
     if st.button("✅ Periksa Jawaban", type="primary"):
